@@ -20,9 +20,16 @@ body {
   min-height: 100vh;
 
   --light-color: #f1ece1;
+  --lighter-color: #f1ece176;
   --dark-color: #595141;
 }
 
 span {
   font-size: 15px;
+}
+
+ul,
+li {
+  list-style: none;
+  font-family: inherit;
 }

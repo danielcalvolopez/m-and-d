@@ -8,9 +8,11 @@ const Home = () => {
     <div className={classes.home}>
       <div className={classes["home-body"]}>
         <Header />
-        <Image className={classes.text} src={mdText} width={400} />
+        <Image className={classes.text} src={mdText} />
         <div className={classes.circle}>
-          <p>Entrar</p>
+          <div className={classes.btn}>
+            <p dataText="Entrar">Entrar</p>
+          </div>
         </div>
       </div>
     </div>
