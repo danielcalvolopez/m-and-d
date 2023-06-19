@@ -8,10 +8,10 @@ const Home = () => {
     <div className={classes.home}>
       <div className={classes["home-body"]}>
         <Header />
-        <Image className={classes.text} src={mdText} />
+        <Image className={classes.text} src={mdText} alt="" />
         <div className={classes.circle}>
           <div className={classes.btn}>
-            <p dataText="Entrar">Entrar</p>
+            <p datatext="Entrar">Entrar</p>
           </div>
         </div>
       </div>

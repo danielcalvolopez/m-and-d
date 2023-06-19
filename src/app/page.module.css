@@ -27,6 +27,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 600px;
+  height: auto;
 }
 
 .circle {
@@ -51,7 +52,7 @@
 
 .circle .btn p {
   display: inline-block;
-  transition: all 0.1s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .circle .btn p::before {
@@ -62,11 +63,6 @@
 
 .circle:hover > .btn p {
   transform: translateY(-100%);
-}
-
-.circle:hover {
-  background-color: var(--dark-color);
-  color: var(--light-color);
 }
 
 @media (max-width: 800px) {
