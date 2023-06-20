@@ -1,0 +1,40 @@
+.card-container {
+  background-color: transparent;
+  color: var(--light-color);
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  border: 1px solid var(--light-color);
+  padding: 78px 135px;
+}
+
+.title {
+  padding-bottom: 12px;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.forca {
+  font-size: inherit;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.location {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.location:hover {
+  scale: 0.9;
+}

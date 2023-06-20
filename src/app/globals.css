@@ -8,6 +8,7 @@
   text-decoration: none;
   color: inherit;
   overscroll-behavior: none;
+  font-family: "Playfair Display", serif;
 
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -32,4 +33,16 @@ ul,
 li {
   list-style: none;
   font-family: inherit;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 131%;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 102.8%;
 }
