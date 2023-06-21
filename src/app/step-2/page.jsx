@@ -1,5 +1,6 @@
 import Card from "@/components/card/Card";
 import classes from "./step-2.module.css";
+import { HiArrowLongRight, HiArrowLongLeft } from "react-icons/hi2";
 
 const Step2 = () => {
   return (
@@ -16,6 +17,16 @@ const Step2 = () => {
           </div>
         </div>
       </Card>
+      {/* <div className={classes.arrows}>
+        <HiArrowLongLeft
+          className={`${classes["arrow-icon"]} ${classes.left}`}
+          size={90}
+        />
+        <HiArrowLongRight
+          className={`${classes["arrow-icon"]} ${classes.right}`}
+          size={90}
+        />
+      </div> */}
     </div>
   );
 };

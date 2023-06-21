@@ -35,12 +35,14 @@
 }
 
 @media (max-width: 1000px) {
-  .info-container {
+  .info-container,
+  .info-container-dark {
     padding: 35px 80px;
     gap: 30px;
   }
 
-  .info-container h1 {
+  .info-container,
+  .info-container-dark h1 {
     font-size: 50px;
   }
 
@@ -50,15 +52,22 @@
 }
 
 @media (max-width: 550px) {
-  .info-container {
-    padding: 50px 80px;
+  .card-container,
+  .card-container-dark {
+    padding: 40px 40px;
+  }
+
+  .info-container,
+  .info-container-dark {
+    padding: 50px 40px;
     gap: 20px;
   }
-  .info-container h1 {
+  .info-container,
+  .info-container-dark h1 {
     font-size: 40px;
   }
 
   .title {
-    font-size: 32px;
+    font-size: 30px;
   }
 }
