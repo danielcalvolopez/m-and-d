@@ -9,11 +9,6 @@
   color: inherit;
   overscroll-behavior: none;
   font-family: "Playfair Display", serif;
-
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 body {

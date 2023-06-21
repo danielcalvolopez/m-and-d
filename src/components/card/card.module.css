@@ -1,6 +1,13 @@
 .card-container {
   background-color: transparent;
   color: var(--light-color);
+  padding: 70px;
+}
+
+.card-container-dark {
+  background-color: transparent;
+  color: var(--dark-color);
+  padding: 70px;
 }
 
 .info-container {
@@ -13,28 +20,45 @@
   padding: 78px 135px;
 }
 
-.title {
-  padding-bottom: 12px;
-}
-
-.information {
+.info-container-dark {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 50px;
+  border: 1px solid var(--dark-color);
+  padding: 78px 135px;
 }
 
-.forca {
-  font-size: inherit;
-  font-style: italic;
-  font-weight: bold;
+.title {
+  padding-bottom: 12px;
 }
 
-.location {
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
+@media (max-width: 1000px) {
+  .info-container {
+    padding: 35px 80px;
+    gap: 30px;
+  }
+
+  .info-container h1 {
+    font-size: 50px;
+  }
+
+  .title {
+    font-size: 42px;
+  }
 }
 
-.location:hover {
-  scale: 0.9;
+@media (max-width: 550px) {
+  .info-container {
+    padding: 50px 80px;
+    gap: 20px;
+  }
+  .info-container h1 {
+    font-size: 40px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
 }
