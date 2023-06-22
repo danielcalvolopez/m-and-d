@@ -19,8 +19,6 @@ const Step1 = () => {
         <Modal toggleModal={toggleMapModal} setToggleModal={setToggleMapModal}>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.231449618622!2d-0.9027079000000001!3d37.7142448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6314ac39e0bcdf%3A0x6cba70e5862b5e47!2sFinca%20Forca%2C%2030395%2C%20Murcia%2C%20Spain!5e0!3m2!1sen!2suk!4v1687432353493!5m2!1sen!2suk"
-            width="600"
-            height="450"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"

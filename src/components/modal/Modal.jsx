@@ -1,5 +1,4 @@
 import classes from "./modal.module.css";
-import { GrClose } from "react-icons/gr";
 import { MdOutlineClose } from "react-icons/md";
 
 const Modal = ({ children, setToggleModal }) => {
