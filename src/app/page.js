@@ -2,6 +2,7 @@ import Header from "@/components/header/Header";
 import Image from "next/image";
 import classes from "./page.module.css";
 import mdText from "../../public/marta&daniel.svg";
+import Arrows from "@/components/arrows/Arrows";
 
 const Home = () => {
   return (

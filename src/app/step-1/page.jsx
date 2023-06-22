@@ -6,6 +6,7 @@ import { SlLocationPin } from "react-icons/sl";
 import Image from "next/image";
 import Modal from "@/components/modal/Modal";
 import { useState } from "react";
+import Arrows from "@/components/arrows/Arrows";
 
 const Step1 = () => {
   const [toggleMapModal, setToggleMapModal] = useState(false);
@@ -49,9 +50,7 @@ const Step1 = () => {
           />
         </Card>
       </span>
-      <div className={classes.arrow}>
-        <HiArrowLongRight className={classes["arrow-icon"]} size={90} />
-      </div>
+      <Arrows light right />
     </div>
   );
 };

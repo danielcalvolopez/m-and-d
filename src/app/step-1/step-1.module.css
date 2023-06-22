@@ -29,9 +29,14 @@
 }
 
 .arrow {
+  position: absolute;
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
   color: var(--light-color);
   padding: 0 51px;
+  width: 100%;
+  height: 100px;
 }
 
 .arrow-icon {

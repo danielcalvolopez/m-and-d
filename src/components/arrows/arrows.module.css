@@ -1,0 +1,44 @@
+.arrow {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 51px;
+  width: 100%;
+  height: 100px;
+  bottom: 0;
+  z-index: 100;
+}
+
+.arrow-right {
+  justify-content: flex-end;
+}
+
+.arrow-left {
+  justify-content: flex-start;
+}
+
+.arrow-icon-left,
+.arrow-icon-right {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 7;
+}
+
+.light {
+  color: var(--light-color);
+}
+.dark {
+  color: var(--dark-color);
+}
+
+.both {
+  justify-content: space-between;
+}
+
+.arrow-icon-right:hover {
+  transform: translateX(10px);
+}
+.arrow-icon-left:hover {
+  transform: translateX(-10px);
+}
