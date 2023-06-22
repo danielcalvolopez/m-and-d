@@ -54,7 +54,7 @@
 @media (max-width: 550px) {
   .card-container,
   .card-container-dark {
-    padding: 40px 40px;
+    padding: 40px;
   }
 
   .info-container,
