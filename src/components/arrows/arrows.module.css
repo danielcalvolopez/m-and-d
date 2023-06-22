@@ -36,6 +36,13 @@
   justify-content: space-between;
 }
 
+.arrow-icon-left,
+.arrow-icon-right {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+}
+
 .arrow-icon-right:hover {
   transform: translateX(10px);
 }

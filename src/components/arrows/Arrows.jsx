@@ -10,21 +10,21 @@ const Arrows = ({ left, right, dark, light }) => {
       } ${left && right && classes.both}`}
     >
       {left && (
-        <BsArrowLeft
-          className={`${classes["arrow-icon-left"]} ${dark && classes.dark} ${
-            light && classes.light
-          }`}
-          size={60}
-        />
+        <div className={classes["arrow-icon-left"]}>
+          <BsArrowLeft
+            className={`${dark && classes.dark} ${light && classes.light}`}
+            size={60}
+          />
+        </div>
       )}
 
       {right && (
-        <BsArrowRight
-          className={`${classes["arrow-icon-right"]} ${dark && classes.dark} ${
-            light && classes.light
-          }`}
-          size={60}
-        />
+        <div className={classes["arrow-icon-right"]}>
+          <BsArrowRight
+            className={`${dark && classes.dark} ${light && classes.light}`}
+            size={60}
+          />
+        </div>
       )}
     </div>
   );
