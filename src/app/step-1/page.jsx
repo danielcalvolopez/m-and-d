@@ -1,7 +1,6 @@
 "use client";
 import Card from "@/components/card/Card";
 import classes from "./step-1.module.css";
-import { HiArrowLongRight } from "react-icons/hi2";
 import { SlLocationPin } from "react-icons/sl";
 import Image from "next/image";
 import Modal from "@/components/modal/Modal";
