@@ -1,6 +1,5 @@
 import Card from "@/components/card/Card";
 import classes from "./step-2.module.css";
-import { HiArrowLongRight, HiArrowLongLeft } from "react-icons/hi2";
 import Arrows from "@/components/arrows/Arrows";
 
 const Step2 = () => {

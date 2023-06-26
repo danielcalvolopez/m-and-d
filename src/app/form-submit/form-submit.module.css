@@ -1,1 +1,100 @@
+.form-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 100vh;
+  position: relative;
+  z-index: 0;
+}
 
+.form-container img {
+  position: absolute;
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+}
+
+.backdrop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  background-color: #5951418a;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form h1 {
+  color: var(--light-color);
+  text-transform: uppercase;
+  font-size: 40px;
+  letter-spacing: 3px;
+  padding-bottom: 20px;
+}
+
+.form form {
+  background-image: url("../../../public/paper-wallpaper.jpeg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 90px;
+  padding: 90px;
+  width: 100%;
+}
+
+.form input,
+.form select {
+  width: 100%;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--form);
+  padding-bottom: 10px;
+}
+
+.form input::placeholder {
+  color: var(--form);
+}
+
+.form input {
+  font-size: 32px;
+  color: var(--dark-color);
+}
+
+.form select {
+  font-size: 24px;
+  color: var(--dark-color);
+  cursor: pointer;
+}
+
+.form select:invalid {
+  color: var(--form);
+}
+.form select[disabled] {
+  color: var(--form);
+}
+
+.form form button {
+  width: 250px;
+  height: 60px;
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid var(--dark-color);
+  color: var(--dark-color);
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.form form button:hover {
+  background-color: #59514127;
+}

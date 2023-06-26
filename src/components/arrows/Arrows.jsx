@@ -1,5 +1,4 @@
 import classes from "./arrows.module.css";
-import { HiArrowLongRight, HiArrowLongLeft } from "react-icons/hi2";
 import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
 
 const Arrows = ({ left, right, dark, light }) => {
