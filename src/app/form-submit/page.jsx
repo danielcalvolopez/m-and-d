@@ -1,21 +1,48 @@
+"use client";
 import Image from "next/image";
+import { useRef } from "react";
 import classes from "./form-submit.module.css";
 
 const FormSubmit = () => {
+  const nameRef = useRef();
+  const companionRef = useRef();
+  const kidsRef = useRef();
+
+  console.log(
+    nameRef?.current?.value,
+    companionRef?.current?.value,
+    kidsRef?.current?.value
+  );
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  };
+
   return (
     <div className={classes["form-container"]}>
       <Image src="/palm-tree.jpg" alt="" width={1500} height={1500} priority />
       <span className={classes.backdrop}>
         <div className={classes.form}>
           <h1>por favor, ¡responde pronto!</h1>
-          <form>
-            <input placeholder="Nombre del invitado/a" type="text" />
-            <select name="total-number" id="total" required>
+          <form onSubmit={handleSubmit}>
+            <input
+              ref={nameRef}
+              placeholder="Nombre del invitado/a"
+              type="text"
+              required
+              pattern=".{3,}"
+            />
+            <select
+              defaultValue=""
+              name="total-number"
+              id="total"
+              required
+              ref={companionRef}
+            >
               <option
                 className={classes["option-placeholder"]}
                 value=""
                 disabled
-                selected
                 hidden
               >
                 Nº total de acompañantes
@@ -27,12 +54,17 @@ const FormSubmit = () => {
               <option value="4">4</option>
               <option value="5">5</option>
             </select>
-            <select name="total-kids" id="kids" required>
+            <select
+              defaultValue=""
+              ref={kidsRef}
+              name="total-kids"
+              id="kids"
+              required
+            >
               <option
                 className={classes["option-placeholder"]}
                 value=""
                 disabled
-                selected
                 hidden
               >
                 De los cuales niños/as
