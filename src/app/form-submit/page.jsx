@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useRef } from "react";
 import classes from "./form-submit.module.css";
+import { IoIosArrowDown } from "react-icons/io";
 
 const FormSubmit = () => {
   const nameRef = useRef();
@@ -32,50 +33,57 @@ const FormSubmit = () => {
               required
               pattern=".{3,}"
             />
-            <select
-              defaultValue=""
-              name="total-number"
-              id="total"
-              required
-              ref={companionRef}
-            >
-              <option
-                className={classes["option-placeholder"]}
-                value=""
-                disabled
-                hidden
+            <div className={classes.select}>
+              <IoIosArrowDown className={classes.arrow} size={25} />
+              <select
+                defaultValue=""
+                name="total-number"
+                id="total"
+                required
+                ref={companionRef}
               >
-                Nº total de acompañantes
-              </option>
-              <option value="0">0</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-            </select>
-            <select
-              defaultValue=""
-              ref={kidsRef}
-              name="total-kids"
-              id="kids"
-              required
-            >
-              <option
-                className={classes["option-placeholder"]}
-                value=""
-                disabled
-                hidden
+                <option
+                  className={classes["option-placeholder"]}
+                  value=""
+                  disabled
+                  hidden
+                >
+                  Nº total de acompañantes
+                </option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+
+            <div className={classes.select}>
+              <IoIosArrowDown className={classes.arrow} size={25} />
+              <select
+                defaultValue=""
+                ref={kidsRef}
+                name="total-kids"
+                id="kids"
+                required
               >
-                De los cuales niños/as
-              </option>
-              <option value="0">0</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-            </select>
+                <option
+                  className={classes["option-placeholder"]}
+                  value=""
+                  disabled
+                  hidden
+                >
+                  De los cuales niños/as
+                </option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
             <button type="submit">Responder</button>
           </form>
         </div>

@@ -5,7 +5,7 @@ import Arrows from "@/components/arrows/Arrows";
 const Step2 = () => {
   return (
     <div className={classes.account}>
-      <Card dark title="Numero de cuenta">
+      <Card dark>
         <div className={classes.content}>
           <div className={classes.iban}>
             <h2>IBAN</h2>
