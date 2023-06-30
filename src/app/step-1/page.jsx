@@ -33,7 +33,7 @@ const Step1 = () => {
         priority
       />
       <span className={classes.backdrop}>
-        <Card title="Donde y cuando">
+        <Card>
           <div className={classes.information}>
             <h1>28/10/2023</h1>
             <h1>18:00</h1>

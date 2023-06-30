@@ -72,9 +72,28 @@
 }
 
 .form select {
+  position: relative;
   font-size: 24px;
   color: var(--dark-color);
   cursor: pointer;
+  padding-bottom: 10px;
+  padding-left: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  -moz-appearance: none;
+  vertical-align: middle;
+}
+
+.select {
+  width: 100%;
+  position: relative;
+}
+
+.select .arrow {
+  position: absolute;
+  right: 0;
+  bottom: 14%;
+  color: var(--form);
 }
 
 .form select:invalid {
@@ -97,4 +116,54 @@
 
 .form form button:hover {
   background-color: #59514127;
+}
+
+@media (max-width: 800px) {
+  .backdrop {
+    padding: 20px;
+  }
+
+  .form h1 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 700px) {
+  .backdrop {
+    padding: 20px;
+  }
+
+  .form h1 {
+    font-size: 25px;
+  }
+
+  .form form {
+    padding: 50px;
+    gap: 50px;
+  }
+
+  .form input {
+    font-size: 25px;
+  }
+
+  .form select {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .backdrop {
+    padding: 20px;
+  }
+
+  .form h1 {
+    font-size: 16px;
+  }
+  .form input {
+    font-size: 20px;
+  }
+
+  .form select {
+    font-size: 16px;
+  }
 }
