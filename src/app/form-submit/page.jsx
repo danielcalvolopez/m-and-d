@@ -30,7 +30,6 @@ const FormSubmit = () => {
               placeholder="Nombre del invitado/a"
               type="text"
               required
-              pattern=".{3,}"
             />
             <select
               defaultValue=""
