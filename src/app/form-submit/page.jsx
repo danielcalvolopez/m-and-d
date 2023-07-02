@@ -31,7 +31,6 @@ const FormSubmit = () => {
               placeholder="Nombre del invitado/a"
               type="text"
               required
-              pattern=".{3,}"
             />
             <div className={classes.select}>
               <IoIosArrowDown className={classes.arrow} size={25} />
